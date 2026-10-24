@@ -1,0 +1,11 @@
+1. Cisco Packet Tracer
+https://www.netacad.com/resources/lab-downloads
+(u have to login in cisco packet to download its resource or app)
+https://www.netacad.com/  -go to this link and write -(getting started with cisco packet tracer) -Trust me ,the second part of video which is setting a network is so helpful
+2. Wireshark + Npcap
+https://www.wireshark.org/download.html
+(windows X64 installer select and make sure npcap ia also downloaded)
+3. Nmap
+https://nmap.org/download.html
+Latest stable release self-installer: nmap-7.992-setup.exe
+4. NS2
