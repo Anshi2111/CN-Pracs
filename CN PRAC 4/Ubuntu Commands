@@ -1,0 +1,34 @@
+#!/bin/bash
+
+echo "===== 1. PING ====="
+ping -c 4 google.com
+
+echo "===== 2. TRACEROUTE ====="
+traceroute -m 10 google.com
+
+echo "===== 3. NSLOOKUP ====="
+nslookup google.com
+
+echo "===== 4. NETSTAT ====="
+netstat -an
+
+echo "===== 5. ARP ====="
+arp -a
+
+echo "===== 6. IP ADDRESS ====="
+ip addr
+
+echo "===== 7. IFCONFIG ====="
+ifconfig
+
+echo "===== 8. DIG ====="
+dig google.com
+
+echo "===== 9. ROUTING TABLE ====="
+ip route
+
+echo "===== 10. ROUTE ====="
+route -n
+
+echo "===== 11. NMAP VERSION ====="
+nmap --version
