@@ -1,0 +1,64 @@
+# Practical No. 10
+
+**Aim:** To use Wireshark to study the Transport Layer, including TCP ports and TCP handshake segments.
+
+### Software Required
+- Wireshark
+- Windows Operating System
+- Internet connection
+
+### Theory
+
+**1. TCP:** Transmission Control Protocol is a connection-oriented Transport Layer protocol that provides reliable data transmission.
+
+**2. Port Number:** A port number identifies an application or service communicating over a network.
+
+**3. Source Port:** The port number from which a TCP segment is sent.
+
+**4. Destination Port:** The port number to which a TCP segment is sent.
+
+**5. TCP Three-Way Handshake:** TCP establishes a connection using three steps:
+- **SYN:** The client requests a connection.
+- **SYN-ACK:** The server acknowledges the request.
+- **ACK:** The client acknowledges the server's response.
+
+### Procedure
+
+1. Open Wireshark and select the active Wi-Fi interface.
+2. Start capturing packets.
+3. Open a web browser and visit `https://example.com`.
+4. Stop the capture.
+5. Enter `tcp` in the display filter and press Enter.
+6. Select a TCP packet and expand the Transmission Control Protocol section.
+7. Observe the source port, destination port, sequence number, acknowledgment number, and TCP flags.
+8. Identify SYN, SYN-ACK, and ACK packets to study the three-way handshake.
+
+### Observations
+
+| Parameter | Observed Value |
+|---|---|
+| Protocol | TCP |
+| Source Port | 443 |
+| Destination Port | 31503 |
+| TCP Flags | ACK |
+| Packet Length | 74 bytes |
+
+*Note: These values are from the captured packet. The selected packet showed ACK, not the initial SYN handshake.*
+
+### TCP Three-Way Handshake
+
+1. **SYN:** Client requests a connection.
+2. **SYN-ACK:** Server acknowledges the request.
+3. **ACK:** Client confirms the connection.
+
+### Output
+
+Wireshark captured TCP packets and displayed TCP port numbers and packet flags.
+
+### Result
+
+Successfully captured and analyzed TCP packets using Wireshark and studied TCP port numbers and the three-way handshake procedure.
+
+### Conclusion
+
+This practical demonstrated how Wireshark can be used to inspect TCP segments, identify port numbers, and understand the process of establishing a TCP connection.
